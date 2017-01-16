@@ -1,3 +1,4 @@
+
 //TASK 1
 
 var a = 3;
@@ -42,19 +43,14 @@ var numbers = [
     Math.floor(Math.random() * (200 - 100) + 100)
 ];
 
-console.log(numbers[0] + " + " + numbers[4] + " = " + (numbers[0] + numbers[4]));
+var arraySum = (numbers[0] + numbers[4]);
 
-/*
-//check if even or odd
-5 % 2 = 1 //means number is odd
-6 % 2 = 0 //means number is even*/
-
-var arraySum = ((numbers[0] + numbers[4]) % 2);
-
-if (arraySum == 1) {
-    console.log("This is an odd number.");
+if ((arraySum % 2) == 1) {
+    sumType = "odd";
 }
 
-else if (arraySum == 0) {
-    console.log("This is an even number.");
+else if ((arraySum % 2) == 0) {
+    sumType = "even";
 }
+
+alert(numbers[0] + " + " + numbers[4] + " = " + (numbers[0] + numbers[4]) + "\n" + "This is an " + sumType + " number.");
